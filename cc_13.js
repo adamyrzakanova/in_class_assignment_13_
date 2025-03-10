@@ -41,3 +41,14 @@ document.getElementById("bulkUpdateBtn").addEventListener("click", function() {
         card.style.border = "2px solid #d9534f";
     });
   });
+
+  // ========================
+// Task 4: Employee Card Removal with Event Bubbling
+// ========================
+
+document.getElementById("employeeContainer").addEventListener("click", function(event) {
+    if (event.target.classList.contains("employee-card")) {
+        console.log("Employee card clicked");
+    }
+  });
+  
